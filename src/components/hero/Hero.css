@@ -1,0 +1,67 @@
+.slider__slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.slide__text {
+  background: var(--color-yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10rem;
+  gap: 1rem;
+}
+
+.slide__text > h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.slide__text > p {
+  font-family: "Sintony";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--color-dark-blue);
+}
+
+.slider__slide > img {
+  height: 90vh;
+  width: 50vw;
+  object-fit: cover;
+}
+
+.swiper > .swiper-button-prev,
+.swiper > .swiper-button-next {
+  color: var(--color-black);
+}
+
+.swiper > .swiper-button-prev::before {
+  position: relative;
+  right: 1.5rem;
+  padding: 5rem;
+  border-radius: 50%;
+  background: var(--color-white);
+  content: "";
+}
+
+.swiper > .swiper-button-prev::after {
+  position: relative;
+  right: 4.5rem;
+}
+
+.swiper > .swiper-button-next::before {
+    position: relative;
+    left: 3.5rem;
+    padding: 5rem;
+    border-radius: 50%;
+    background: var(--color-white);
+    content: "";
+  }
+  
+  .swiper > .swiper-button-next::after {
+      position: relative;
+      right: 5rem;
+    }
