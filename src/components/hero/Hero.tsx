@@ -32,7 +32,7 @@ const heroSlides: IHeroSlide[] = [
 
 const Hero = () => {
   return (
-    <section>
+    <section className="hero">
       <Swiper
         className="slider"
         slidesPerView={1}

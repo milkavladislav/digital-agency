@@ -1,0 +1,72 @@
+.services {
+  padding-bottom: 5rem;
+}
+
+.services__cards {
+  padding: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 3rem;
+}
+
+.services > h2 {
+  position: relative;
+  top: 7rem;
+  width: 35vw;
+  left: 45vw;
+  text-align: right;
+}
+
+.service__card {
+  width: 35vw;
+  position: relative;
+  background: var(--color-black);
+  padding: 3rem;
+}
+
+.service__card > h3 {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: var(--color-white);
+}
+
+.service__card > p {
+  font-family: "Sintony";
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: var(--color-white);
+}
+
+.service__card > .img__wrapper > img {
+  display: block;
+  height: 6rem;
+  padding: 1rem;
+  z-index: 2;
+}
+
+.service__card > .img__wrapper {
+  position: absolute;
+  height: 6rem;
+  width: 6rem;
+  background: var(--color-yellow);
+  border-radius: 50%;
+}
+
+.service__card:nth-of-type(2n + 1) > .img__wrapper {
+  top: 3rem;
+  left: -3.5rem;
+}
+
+.service__card:nth-of-type(2n) > .img__wrapper {
+  top: 3rem;
+  right: -3.5rem;
+}
+
+.service__card:nth-of-type(2n) {
+  top: 5rem;
+}
