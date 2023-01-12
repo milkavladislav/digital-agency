@@ -20,6 +20,7 @@ body {
   --color-black: hsla(0, 0%, 0%, 1);
   --color-yellow: hsla(47, 100%, 50%, 1);
   --color-dark-blue: hsla(214, 22%, 21%, 1);
+  --color-grey: hsla(0, 0%, 59%, 1);
 
   --section-padding: 10vw;
 }
