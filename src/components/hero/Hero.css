@@ -2,12 +2,12 @@
   padding: 0;
 }
 
-.slider__slide {
+.hero__slider-slide {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.slide__text {
+.hero__slider-text {
   background: var(--color-yellow);
   display: flex;
   flex-direction: column;
@@ -17,13 +17,13 @@
   gap: 1rem;
 }
 
-.slide__text > h1 {
+.hero__slider-text > h1 {
   font-weight: 900;
   font-size: 3rem;
   line-height: 3rem;
 }
 
-.slide__text > p {
+.hero__slider-text > p {
   font-family: "Sintony";
   font-weight: 400;
   font-size: 1rem;
@@ -31,18 +31,18 @@
   color: var(--color-dark-blue);
 }
 
-.slider__slide > img {
+.hero__slider-slide > img {
   height: 90vh;
   width: 50vw;
   object-fit: cover;
 }
 
-.swiper > .swiper-button-prev,
-.swiper > .swiper-button-next {
+.hero__slider > .swiper-button-prev,
+.hero__slider > .swiper-button-next {
   color: var(--color-black);
 }
 
-.swiper > .swiper-button-prev::before {
+.hero__slider > .swiper-button-prev::before {
   position: relative;
   right: 1.5rem;
   padding: 5rem;
@@ -51,21 +51,21 @@
   content: "";
 }
 
-.swiper > .swiper-button-prev::after {
+.hero__slider > .swiper-button-prev::after {
   position: relative;
   right: 4.5rem;
 }
 
-.swiper > .swiper-button-next::before {
-    position: relative;
-    left: 3.5rem;
-    padding: 5rem;
-    border-radius: 50%;
-    background: var(--color-white);
-    content: "";
-  }
-  
-  .swiper > .swiper-button-next::after {
-      position: relative;
-      right: 5rem;
-    }
+.hero__slider > .swiper-button-next::before {
+  position: relative;
+  left: 3.5rem;
+  padding: 5rem;
+  border-radius: 50%;
+  background: var(--color-white);
+  content: "";
+}
+
+.hero__slider > .swiper-button-next::after {
+  position: relative;
+  right: 5rem;
+}

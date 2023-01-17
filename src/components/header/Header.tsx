@@ -9,23 +9,30 @@ interface IMenuItem {
 
 export const menuList: IMenuItem[] = [
   {
-    link: "#service",
+    link: "service",
     title: "Our Service",
   },
 
   {
-    link: "#about-us",
+    link: "about-us",
     title: "About Us",
   },
   {
-    link: "#blog",
+    link: "blog",
     title: "Blog",
   },
   {
-    link: "#contact",
+    link: "contact",
     title: "Contact Us",
   },
 ];
+
+const handleClickScroll = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 const Header = () => {
   return (
@@ -33,9 +40,9 @@ const Header = () => {
       <img src={logo} alt="logo" />
       <div className="menu__list">
         {menuList.map(({ link, title }) => (
-          <a href={link} key={link}>
+          <button onClick={() => handleClickScroll(link)} key={link}>
             {title}
-          </a>
+          </button>
         ))}
       </div>
     </header>

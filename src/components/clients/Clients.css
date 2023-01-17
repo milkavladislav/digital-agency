@@ -1,0 +1,13 @@
+.clients {
+  background: var(--color-bg-light-grey);
+  display: flex;
+  min-height: 10vh;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.clients > img:hover {
+  background: var(--color-white);
+}

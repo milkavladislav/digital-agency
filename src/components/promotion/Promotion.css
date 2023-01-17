@@ -1,0 +1,93 @@
+.promotion {
+  overflow: hidden;
+}
+
+.promotion__block {
+  padding: 10vh calc(var(--section-padding) + 5vw);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.promotion__block > iframe {
+  width: 100%;
+  aspect-ratio: 2/1;
+  margin: auto;
+}
+
+.promotion__block-text > h2 {
+  font-weight: 900;
+  font-size: 2.3rem;
+  line-height: 3rem;
+}
+
+.promotion__block-text > h2:last-of-type {
+  color: var(--color-yellow);
+}
+
+.promotion__block-text > ul {
+  margin: 2rem 1.5rem;
+  list-style: disc;
+  font-family: "Sintony";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--color-dark-blue);
+}
+
+.promotion__block-text > a {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: 3.08px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background: var(--color-black);
+  padding: 0.7rem 2.5rem;
+  cursor: pointer;
+}
+
+.milestone {
+  background: var(--color-black);
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.milestone__card {
+  padding: 5rem 0;
+  text-align: center;
+  color: var(--color-yellow);
+  cursor: default;
+  width: 25%;
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.milestone__card:hover {
+  background: var(--color-yellow);
+}
+
+.milestone__card:hover > h3 {
+  color: var(--color-white);
+}
+
+.milestone__card > h3 {
+  font-family: "Sintony";
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 7rem;
+  color: var(--color-yellow);
+}
+
+.milestone__card > h4 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+}

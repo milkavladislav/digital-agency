@@ -1,0 +1,75 @@
+.testimony__slider > .swiper-button-prev,
+.testimony__slider > .swiper-button-next {
+  color: var(--color-black);
+}
+
+.testimony__slider > .swiper-button-prev::before {
+  position: relative;
+  right: 1.5rem;
+  padding: 5rem;
+  border-radius: 50%;
+  background: var(--color-white);
+  content: "";
+}
+
+.testimony__slider > .swiper-button-prev::after {
+  position: relative;
+  right: 4.5rem;
+}
+
+.testimony__slider > .swiper-button-next::before {
+  position: relative;
+  left: 3.5rem;
+  padding: 5rem;
+  border-radius: 50%;
+  background: var(--color-white);
+  content: "";
+}
+
+.testimony__slider > .swiper-button-next::after {
+  position: relative;
+  right: 5rem;
+}
+
+.testimony__slider-slide {
+  background: var(--color-yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 30vw;
+}
+
+.testimony__slider-slide > h3 {
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 5rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.testimony__slider-slide > h4 {
+  font-family: "Sintony";
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.testimony__slider-slide > p {
+  font-family: "Sintony";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.testimony__slider-slide > p::before {
+  content: "“";
+  position: relative;
+  top: -5rem;
+  left: calc(50% - 2rem);
+  font-family: "Source Sans Pro";
+  font-weight: 900;
+  font-size: 5rem;
+  letter-spacing: -2rem;
+}

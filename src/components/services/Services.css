@@ -3,18 +3,16 @@
 }
 
 .services__cards {
-  padding: 5rem 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
   gap: 3rem;
 }
 
 .services > h2 {
   position: relative;
-  top: 7rem;
+  top: 3rem;
   width: 35vw;
   left: 45vw;
   text-align: right;

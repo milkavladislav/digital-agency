@@ -1,0 +1,90 @@
+.team > h2 {
+  text-align: right;
+}
+
+.people__slider-slide {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.people__slide-text > h3 {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.people__slide-text > h4 {
+  font-family: "Sintony";
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 3rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-dark-blue);
+}
+
+.social__media-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.social__media-wrapper > * {
+  color: var(--color-black);
+}
+
+.social__media-wrapper > *:hover {
+  color: var(--color-yellow);
+}
+
+.people__slide-text > p {
+  font-family: "Sintony";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--color-dark-blue);
+}
+
+.people__slide-photos {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.people__slide-photos > img {
+  height: 50%;
+  width: 25%;
+  align-self: flex-end;
+  object-fit: cover;
+}
+.people__slide-photos > img:hover {
+  height: 70%;
+  transition: height 0.7s;
+}
+
+.team__slider > .swiper-button-prev,
+.team__slider > .swiper-button-next {
+  color: var(--color-black);
+  position: relative;
+  left: 10vw;
+}
+
+.team__slider > .swiper-button-prev:hover,
+.team__slider > .swiper-button-next:hover {
+  color: var(--color-yellow)
+}
+
+.team__slider > .swiper-button-next::after {
+  content: "⟶";
+  position: relative;
+  font-size: 3rem;
+  left: 5rem;
+  bottom: 1.4rem;
+}
+
+.team__slider > .swiper-button-prev::after {
+  content: "⟵";
+  font-size: 3rem;
+  position: relative;
+}

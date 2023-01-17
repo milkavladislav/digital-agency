@@ -11,8 +11,11 @@ header {
   margin-right: 3rem;
 }
 
-.menu__list > a {
+.menu__list > button {
   font-size: 1rem;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 900;
   line-height: 1rem;
   letter-spacing: 0.03rem;
   text-transform: uppercase;

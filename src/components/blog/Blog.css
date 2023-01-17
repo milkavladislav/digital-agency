@@ -1,0 +1,94 @@
+.blog__parts {
+  display: grid;
+  padding: 3rem 0;
+  grid-template-columns: 3fr 2fr;
+  gap: 2rem;
+}
+
+.blog__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog__main > img {
+  width: 100%;
+}
+
+.blog__main > p:nth-of-type(1) {
+  font-weight: 900;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: var(--color-grey);
+}
+
+.blog__main > h3 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
+.blog__main > p:nth-of-type(2) {
+  font-family: "Sintony";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #222a41;
+}
+
+.blog__main > .read__more {
+  display: block;
+  font-weight: 900;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: var(--color-yellow);
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+  padding-top: 1rem;
+}
+
+.blog__main > .read__more > a {
+  color: var(--color-yellow);
+}
+
+.blog__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog__sidebar-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.blog__sidebar-card:hover {
+background: var(--color-bg-light-grey);
+}
+
+
+.blog__sidebar-card-text > p {
+  font-weight: 900;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  letter-spacing: 0.5px;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  color: var(--color-grey);
+}
+
+.blog__sidebar-card-text > h3 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}

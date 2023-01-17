@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <Swiper
-        className="slider"
+        className="hero__slider"
         slidesPerView={1}
         loop={true}
         pagination={{
@@ -44,8 +44,8 @@ const Hero = () => {
         modules={[Navigation]}
       >
         {heroSlides.map(({ title, text, link, imgHref }) => (
-          <SwiperSlide className="slider__slide">
-            <div className="slide__text">
+          <SwiperSlide className="hero__slider-slide">
+            <div className="hero__slider-text">
               <h1>{title}</h1>
               <p>{text}</p>
               <Button link={link} type={"black"}>
