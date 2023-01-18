@@ -79,3 +79,38 @@ footer {
   background: var(--color-yellow);
   border: 0.1rem solid var(--color-yellow);
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 2rem;
+  }
+  .services__part > a,
+  .about__part > a,
+  .address__part > p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .about__part,
+  .services__part,
+  .address__part {
+    gap: 1.5rem;
+  }
+  
+  .main__part > p {
+    font-size: 0.8rem;
+  }
+
+  .address__part > .icon__links {
+    gap: 1rem
+  }
+
+  .address__part > .icon__links > a {
+    padding: 0.5rem
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+}

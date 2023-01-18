@@ -69,3 +69,28 @@ form > button.yellow__button {
   font-size: 0.8rem;
   cursor: pointer;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .contact {
+    padding: 3rem;
+  }
+
+  .contact__card-text > h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  input,
+  textarea {
+    padding: 1rem;
+  }
+
+  form {
+    padding: 3rem;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+}

@@ -39,6 +39,22 @@ section > h2 {
   line-height: 3rem;
   display: block;
 }
+
 section > h2 > span {
   color: var(--color-yellow);
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  section > h2 {
+    font-size: 2.5rem;
+  }
+
+  section {
+    padding: 5vh;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
 }

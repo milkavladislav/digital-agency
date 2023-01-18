@@ -12,6 +12,7 @@
 
 .blog__main > img {
   width: 100%;
+  object-fit: cover;
 }
 
 .blog__main > p:nth-of-type(1) {
@@ -73,9 +74,8 @@
 }
 
 .blog__sidebar-card:hover {
-background: var(--color-bg-light-grey);
+  background: var(--color-bg-light-grey);
 }
-
 
 .blog__sidebar-card-text > p {
   font-weight: 900;
@@ -91,4 +91,41 @@ background: var(--color-bg-light-grey);
   font-weight: 900;
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .blog__sidebar-card > img {
+    height: 10vh;
+    aspect-ratio: 1/1;
+  }
+
+  .blog__sidebar-card-text > h3 {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .blog__sidebar-card-text > p {
+    padding-bottom: 0.5rem;
+  }
+
+  .blog__main > img {
+    width: 100%;
+    aspect-ratio: 2/1;
+  }
+
+  .blog__main > h3 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .blog__main > p:nth-of-type(2) {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
 }

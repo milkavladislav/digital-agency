@@ -1,6 +1,9 @@
 .hero {
   padding: 0;
 }
+.hero__slider {
+  height: 100vh;
+}
 
 .hero__slider-slide {
   display: grid;
@@ -32,7 +35,7 @@
 }
 
 .hero__slider-slide > img {
-  height: 90vh;
+  height: 100%;
   width: 50vw;
   object-fit: cover;
 }
@@ -68,4 +71,16 @@
 .hero__slider > .swiper-button-next::after {
   position: relative;
   right: 5rem;
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .hero__slider-text {
+    padding: 5rem;
+    gap: 3rem
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
 }

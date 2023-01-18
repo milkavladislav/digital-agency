@@ -1,6 +1,7 @@
 .clients {
   background: var(--color-bg-light-grey);
   display: flex;
+  flex-wrap: wrap;
   min-height: 10vh;
   gap: 1rem;
   justify-content: center;
@@ -10,4 +11,13 @@
 
 .clients > img:hover {
   background: var(--color-white);
+}
+
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
 }

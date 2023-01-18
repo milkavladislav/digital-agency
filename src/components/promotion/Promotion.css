@@ -91,3 +91,31 @@
   color: var(--color-white);
   text-transform: uppercase;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .promotion__block {
+    padding: 5vw;
+  }
+  .promotion__block-text > h2 {
+    font-size: 2rem;
+  }
+  .promotion__block-text > ul,
+  .promotion__block-text > a {
+    font-size: 0.8rem;
+  }
+
+  .milestone__card > h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .milestone__card > h4 {
+    font-size: 1rem;
+  }
+
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+}
