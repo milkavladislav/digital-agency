@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import banner1 from "../../assets/hero/banner1.png";
+import banner2 from "../../assets/gallery/Photo_1.png"
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Button from "../common/button/Button";
@@ -23,10 +24,10 @@ const heroSlides: IHeroSlide[] = [
     imgHref: banner1,
   },
   {
-    title: "Grow your brand through digital",
-    text: "If the path is beautiful, let us not ask where it leads. my religion is very simple. my religion is kindness. each of us has within our power the ability to disrupt",
+    title: "Leave your product fear",
+    text: "Saturday found him for the first time strolling alone through zurich, breathing in the heady smell of his freedom. new adventures hid around each corner. The future was again a secret. now, what was tiring",
     link: "#",
-    imgHref: banner1,
+    imgHref: banner2,
   },
 ];
 

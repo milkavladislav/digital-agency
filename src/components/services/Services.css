@@ -93,7 +93,7 @@
     top: 2rem;
     left: -2.5rem;
   }
-  
+
   .service__card:nth-of-type(2n) > .img__wrapper {
     top: 2rem;
     right: -2.5rem;
@@ -102,4 +102,25 @@
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
 @media screen and (max-width: 600px) {
+  .services > h2 {
+    top: 1rem;
+    width: 100vw;
+    left: 0;
+    text-align: center;
+  }
+
+  .services__cards {
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  .service__card {
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .service__card:nth-of-type(2n) {
+    top: 0;
+    left: 0rem
+  }
 }

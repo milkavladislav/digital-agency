@@ -113,9 +113,38 @@
   .milestone__card > h4 {
     font-size: 1rem;
   }
-
 }
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
 @media screen and (max-width: 600px) {
+  .milestone {
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+
+  .milestone__card {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .promotion__block {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .promotion__block > iframe {
+    margin-top: 2rem;
+  }
+
+  .promotion__block-text > ul {
+    margin: 1rem;
+  }
+
+  .promotion__block-text > a {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 1rem 2.5rem;
+  }
 }

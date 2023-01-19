@@ -128,4 +128,12 @@
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
 @media screen and (max-width: 600px) {
+  .blog__parts {
+    padding: 3rem 0;
+    grid-template-columns: 1fr;
+  }
+
+  .blog__sidebar {
+    gap: 1rem;
+  }
 }

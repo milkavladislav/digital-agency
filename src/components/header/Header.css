@@ -24,6 +24,9 @@ header {
 
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
 @media screen and (max-width: 1024px) {
+  .menu__list {
+    display: none;
+  }
 }
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ======== */

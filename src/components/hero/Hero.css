@@ -77,10 +77,66 @@
 @media screen and (max-width: 1024px) {
   .hero__slider-text {
     padding: 5rem;
-    gap: 3rem
+    gap: 3rem;
   }
 }
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
 @media screen and (max-width: 600px) {
+  .hero__slider > .swiper-button-prev:after,
+  .hero__slider > .swiper-button-next:after {
+    font-size: 1rem;
+    line-height: 0;
+  }
+
+  .hero__slider > .swiper-button-next::before,
+  .hero__slider > .swiper-button-prev::before {
+    padding: 2rem;
+  }
+
+  .hero__slider > .swiper-button-prev::after {
+    right: 3rem;
+  }
+
+  .hero__slider > .swiper-button-next::after {
+    right: 1rem;
+  }
+
+  .hero__slider > .swiper-button-prev::before {
+    right: 2rem;
+  }
+
+  .hero__slider > .swiper-button-next::before {
+    left: 2.5rem;
+  }
+
+  .hero__slider-slide {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .hero__slider-slide > img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .hero__slider-text {
+    padding: 2rem;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .hero__slider-text > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .hero__slider-text > p {
+    text-align: center;
+    font-family: "Sintony";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--color-dark-blue);
+  }
 }

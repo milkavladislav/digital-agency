@@ -93,4 +93,19 @@ form > button.yellow__button {
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
 @media screen and (max-width: 600px) {
+  .contact__card {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 1rem;
+  }
+
+  .contact__card-text {
+    padding: 2rem 1.5rem;
+  }
+
+  form {
+    padding: 2rem;
+  }
 }

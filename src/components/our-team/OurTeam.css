@@ -72,7 +72,7 @@
 
 .team__slider > .swiper-button-prev:hover,
 .team__slider > .swiper-button-next:hover {
-  color: var(--color-yellow)
+  color: var(--color-yellow);
 }
 
 .team__slider > .swiper-button-next::after {
@@ -87,4 +87,74 @@
   content: "⟵";
   font-size: 3rem;
   position: relative;
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .people__slider-slide {
+    grid-template-columns: 1fr;
+  }
+
+  .team__slider > .swiper-button-prev,
+  .team__slider > .swiper-button-next {
+    bottom: 60vh;
+    left: 5vw;
+  }
+
+  .people__slide-photos {
+    height: 70vh;
+  }
+
+  .people__slide-photos > img {
+    height: 70%;
+  }
+
+  .people__slide-photos > img:hover {
+    height: 100%;
+  }
+
+  .social__media-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+  .people__slide-text > h3 {
+    font-size: 1.5rem;
+  }
+
+  .team__slider {
+    margin-top: 1rem;
+  }
+  .people__slide-text {
+    text-align: center;
+  }
+
+  .social__media-wrapper {
+    justify-content: center;
+  }
+
+  .people__slide-photos {
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    height: 50vh;
+    justify-content: center;
+  }
+
+  .people__slide-photos > img {
+    width: 45%;
+    height: 50%;
+  }
+
+  .team__slider > .swiper-button-prev,
+  .team__slider > .swiper-button-next {
+    bottom: 55vh;
+    left: 30vw;
+  }
+
+  .people__slide-photos > img:hover {
+    height: 50%;
+    transition: none;
+  }
 }

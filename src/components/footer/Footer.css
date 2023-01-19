@@ -97,20 +97,27 @@ footer {
   .address__part {
     gap: 1.5rem;
   }
-  
+
   .main__part > p {
     font-size: 0.8rem;
   }
 
   .address__part > .icon__links {
-    gap: 1rem
+    gap: 1rem;
   }
 
   .address__part > .icon__links > a {
-    padding: 0.5rem
+    padding: 0.5rem;
   }
 }
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
 @media screen and (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
 }

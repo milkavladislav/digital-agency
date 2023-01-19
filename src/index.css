@@ -57,4 +57,10 @@ section > h2 > span {
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
 @media screen and (max-width: 600px) {
+  section {
+    padding: 1rem;
+  }
+  section > h2 {
+    font-size:2rem;
+  }
 }
